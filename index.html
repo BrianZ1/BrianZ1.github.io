@@ -24,8 +24,14 @@
     <br>
     <a href="index.html"><img class="navImages" src="home.jpg" width=147 height=47 alt="Logo"></a>
     <br>   
-    <a href=".html"><img class="navImages" src="menu.jpg" width=147 height=47 alt="Logo"></a>
-    <br>   
+    <a href=".html" onmouseover="OpenMenu('Item3Submenu')"><img class="navImages" src="menu.jpg" width=147 height=47 alt="Logo"></a>
+     <ul id="Item3Submenu" onmouseover="KeepSubmenu()"
+onmouseout="CloseMenu()">
+ <a href="index.html">Security</a> 
+ <a href="index.html">Hardware</a> 
+ <a href="index.html">Software</a> 
+ </ul>
+ <br>   
     <a href="contactInfo.html"><img class="navImages" src="contact.jpg" width=147 height=47 alt="Logo"></a> 
     
 </nav>
@@ -85,6 +91,43 @@
 </div>    
     
 </div>
+<script>
+var Item; //Hold current open menu item
+var Timer; //Hold timeout value
+ document.onclick=CloseMenu; //Hide the menu after clicking outside it
+ 
+function OpenMenu(Menu) 
+ { 
+ //if open, close it
+ if(Item) 
+ { 
+ Item.style.visibility="hidden"; 
+ } 
+ //setup new menu item
+ Item=document.getElementById(Menu); 
+ Item.style.visibility="visible"; 
+ } 
+ 
+function CloseMenu() 
+ { 
+ //setup a timer to close menu
+ Timer = window.setTimeout(PerformClose, 500); 
+ } 
+ 
+function PerformClose() 
+ { 
+ if(Item) 
+ { 
+ Item.style.visibility="hidden"; 
+ } 
+ } 
+ 
+function KeepSubmenu() 
+ { 
+//reset the timer
+ window.clearTimeout(Timer); 
+ } 
+</script>
     
 </div>    
     <p>
