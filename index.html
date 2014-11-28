@@ -85,43 +85,6 @@
 </div>    
     
 </div>
-<script>
-var Item; //Hold current open menu item
-var Timer; //Hold timeout value
- document.onclick=CloseMenu; //Hide the menu after clicking outside it
- 
-function OpenMenu(Menu) 
- { 
- //if open, close it
- if(Item) 
- { 
- Item.style.visibility="hidden"; 
- } 
- //setup new menu item
- Item=document.getElementById(Menu); 
- Item.style.visibility="visible"; 
- } 
- 
-function CloseMenu() 
- { 
- //setup a timer to close menu
- Timer = window.setTimeout(PerformClose, 500); 
- } 
- 
-function PerformClose() 
- { 
- if(Item) 
- { 
- Item.style.visibility="hidden"; 
- } 
- } 
- 
-function KeepSubmenu() 
- { 
-//reset the timer
- window.clearTimeout(Timer); 
- } 
-</script>
     
 </div>    
     <p>
