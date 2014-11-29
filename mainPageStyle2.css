@@ -1,0 +1,157 @@
+.textMod{
+    color: darkblue;
+}
+footer{
+    background-color: yellow;
+    border-radius: 1.0em;
+    height: 1.0em;
+}
+h1{
+    background-color: #00B13C;
+    height:2.5em;
+    width: 100%;
+    text-align: center;
+    line-height: 2.5em;
+    border-radius: 0.5em;
+}
+h2{
+    background-color: darkblue;
+    color: whitesmoke;
+    width: 40%;
+    height: 5em;
+    float: left;
+    border-radius: 0.25em;
+}
+nav{
+    float: right;
+    background-color: darkblue;
+    height: 20.0em;
+    width: 15em;
+    padding: 0;
+    border-radius: 1.5em;
+}
+
+body{
+    background-color: #00B13C;
+}
+.bodyBorder{
+    float: left;
+    background-color: darkblue;
+    height: 42em;
+    width: 39%;
+    border-radius: 1.5em;
+    margin-right: 0;
+    color: darkblue;
+    padding: 0.60em;
+    opacity: .90;
+	margin-top: 2.0em; 
+}
+.bodyInfo{
+    float: left;
+    background-color: #00B13C;
+    height: 40em;
+    width: 90%;
+    border-radius: 1.0em;
+    padding: 0.5em;
+    margin-left: 1.0em;
+}
+.bodyBorderTwo{
+    float: right;
+    background-color: darkblue;
+    height: 33em;
+    width: 50.5%;
+    border-radius: 1.5em;
+    margin-left: 1.0em;
+    color: darkblue;
+    padding: 0.60em;
+    opacity: .90;
+	margin-top: 1.0em; 
+	
+}
+.bodyInfoTwo{
+    float: left;
+    background-color: #00B13C;
+    height: 31em;
+    width: 90%;
+    border-radius: 1.0em;
+    padding: 0.5em;
+    margin-left: 1.5em;
+}
+#left{
+    float: left;
+    background-color: red; 
+}
+.navImages{
+    border-radius: 1.0em;
+    margin-left: .5em;
+    margin-bottom: 1.5em;
+}
+.mainBackground{
+    background-color: white;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto; 
+    height: 60em;
+    background-image: url('students-sunset-home.jpg');
+	margin-top: 4em; 
+}
+
+
+@media only screen and ( max-width:768px)
+{
+	.img { display: none; }
+	
+	.bodyBorderTwo{	width: 48%;
+					padding:0;
+					height: auto;
+					}
+					
+	.bodyInfoTwo{ padding: .25em;
+					width: 100%;
+					margin-left:0; 
+					height: auto;}
+					
+	
+	.bodyBorder{ padding: 0;  
+				width: 48%;
+				height:auto;}
+				
+	.bodyInfo{ padding: .25em;
+				width:100%;
+				margin-left: 0;
+				height:auto;}
+	
+	
+	h1 { height:2.0em;
+    width: 100%;
+    line-height: 1.0em;
+     }
+	
+	h2 {  background-color: darkblue;
+    color: whitesmoke;
+    width: 100%;
+    height: auto;
+    float: none;
+    border-radius: 0.25em;}
+	
+	nav {  float: none;
+    background-color: darkblue;
+    height: 5em;
+    width: 100%;
+    padding: 0;
+    border-radius: 1.5em; }
+	
+	nav li { display: inline;} 
+	
+	.navImages{
+    border-radius: 1.0em; 
+	margin:1em 0em;
+	width: 7em;
+	height: 3em;}
+}
+	
+@media only screen and (max-width:480px)
+{
+	
+
+}
