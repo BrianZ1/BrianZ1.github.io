@@ -21,10 +21,21 @@
     
 <nav>
     
-    <br>   
-    <a href="index.html"><img class="navImages" src="home.jpg" width=147 height=47 alt="Logo"></a>
-    <br>
-    <a href="index.html"><img class="navImages" src="menu.jpg" width=147 height=47 alt="Logo"></a>
+    <ul>	
+    <li><a href="index.html"><img class="navImages" src="Navigation/homeButton.png" alt="Logo"></a>
+    </li>
+	<li><a href="contactInfo.html"><img class="navImages" src="Navigation/contactButton.png"  alt="Logo"></a> 
+    </li>
+    <li id="Item2"><a href="menu.html" onmouseover="OpenMenu('Item2Submenu')"><img class="navImages" src="Navigation/menuButton.png" alt="Logo"></a>
+     <ul id="Item2Submenu" onmouseover="KeepSubmenu()"
+	onmouseout="CloseMenu()">
+	<a href="hardware.html"><img class="navImages2" src="Navigation/hardwareButton.png" alt="Logo"></a>
+	<a href="security.html"><img class="navImages2" src="Navigation/securityButton.png" alt="Logo"></a>
+	<a href="software.html"><img class="navImages2" src="Navigation/softwareEssentialsButton.png" alt="Logo"></a>
+	</ul>
+	</li>
+	
+	</ul>
 
     <br>
         <form> 
@@ -43,7 +54,9 @@
     
     <p>
   <br><br><br>
-        Email: brian.zhang@mymail.champlain.edu
+        Email: brian.zhang@
+		mymail.
+		champlain.edu
     </p>
     <p>
         Phone: (802)370-7261
@@ -53,7 +66,9 @@
     
     <p>
    <br><br><br><br>
-        Email: damon.devani@mymail.champlain.edu
+        Email: damon.devani@
+		mymail.
+		champlain.edu
     </p>
     <p>
         Phone: (978)886-3473
@@ -82,6 +97,40 @@
             alt="Valid CSS!" />
     </a>
     </p>
+	
+	<script>
+var Item; 
+var Timer; 
+ document.onclick=CloseMenu; 
+ 
+function OpenMenu(Menu) 
+ { 
+ if(Item) 
+ { 
+ Item.style.visibility="hidden"; 
+ } 
+ Item=document.getElementById(Menu); 
+ Item.style.visibility="visible"; 
+ } 
+ 
+function CloseMenu() 
+ { 
+ Timer = window.setTimeout(PerformClose, 500); 
+ } 
+ 
+function PerformClose() 
+ { 
+ if(Item) 
+ { 
+ Item.style.visibility="hidden"; 
+ } 
+ } 
+ 
+function KeepSubmenu() 
+ { 
+ window.clearTimeout(Timer); 
+ } 
+</script>  
 </body>
 
 </html>
