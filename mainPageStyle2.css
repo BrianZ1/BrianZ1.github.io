@@ -293,6 +293,3 @@ body{
 	.mainBackground{height: 100em; } 
 	
 }
-@media only screen and (max-width:380px){
-	.mainBackground{height: 120em; } 	
-}
