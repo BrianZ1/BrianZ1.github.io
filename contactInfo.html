@@ -5,6 +5,8 @@
 <link rel="stylesheet" type="text/css" href="mainPageStyle2.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Champ Tech</title>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBDbC1WZzFUc8VYs65TKROqfwDEL8umV-c">
+</script>
 </head>
 <body class="textMod">
 <div class="mainBackground">
@@ -87,11 +89,10 @@
 </div>    
     
     
-    <div class="bodyBorderTwo">
-<div class="bodyInfoTwo">    
+    <div class="bodyBorderTwo" >
+<div class="bodyInfoTwo" id="googleMap">    
 
-
-  
+ 
 </div>    
     
 </div>
@@ -141,6 +142,32 @@ function KeepSubmenu()
  window.clearTimeout(Timer); 
  } 
 </script>  
+
+
+
+<script>
+var myCenter=new google.maps.LatLng(44.4757, -73.2057);
+
+function initialize()
+{
+var mapProp = {
+	center:myCenter,
+	zoom:5,
+	mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+	position:myCenter,
+	animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 </body>
 
 </html>
