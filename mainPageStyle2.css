@@ -205,6 +205,8 @@ body{
 	margin:1em 0em;
 	width: 20%;
 	height: 3em;}
+	
+	.mainBackground{height: 100em; } 
 }
 @media only screen and (max-width:767px) and (min-width:481px) {
 	nav { float: none;
@@ -263,7 +265,7 @@ body{
 				margin-left: 0;
 				height:auto;}
 				
-	.mainBackground{height: 80em; }
+	.mainBackground{height: 180em; }
 }
 	
 @media only screen and (max-width:480px)
@@ -312,6 +314,6 @@ body{
 				width:100%;
 				margin-left: 0;
 				height:auto;}
-	.mainBackground{height: 110em; } 
+	.mainBackground{height: 220em; } 
 	
 }
