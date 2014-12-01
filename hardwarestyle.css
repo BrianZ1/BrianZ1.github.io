@@ -263,7 +263,7 @@ body{
 				margin-left: 0;
 				height:auto;}
 				
-	.mainBackground{height: 130em; }
+	.mainBackground{height: 100em; }
 }
 	
 @media only screen and (max-width:480px)
@@ -312,6 +312,6 @@ body{
 				width:100%;
 				margin-left: 0;
 				height:auto;}
-	.mainBackground{height: 150em; } 
+	.mainBackground{height: 180em; } 
 	
 }
