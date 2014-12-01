@@ -48,7 +48,7 @@ body{
 .bodyBorder{
     float: left;
     background-color: darkblue;
-    height: 55em;
+    height: 58em;
     width: 39%;
     border-radius: 1.5em;
     margin-right: 0;
@@ -60,7 +60,7 @@ body{
 .bodyInfo{
     float: left;
     background-color: #00B13C;
-    height:53em;
+    height:56em;
     width: 90%;
     border-radius: 1.0em;
     padding: 0.5em;
@@ -69,7 +69,7 @@ body{
 .bodyBorderTwo{
     float: right;
     background-color: darkblue;
-    height: 46em;
+    height: 49em;
     width: 50.5%;
     border-radius: 1.5em;
     margin-left: 1.0em;
@@ -82,7 +82,7 @@ body{
 .bodyInfoTwo{
     float: left;
     background-color: #00B13C;
-    height: 44em;
+    height: 47em;
     width: 90%;
     border-radius: 1.0em;
     padding: 0.5em;
