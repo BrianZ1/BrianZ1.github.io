@@ -209,6 +209,8 @@ body{
 	.navImages2{width: 25%;
 			height: 2.5em;	
 			display: inline; }
+	
+	.mainBackground{ height:90em;
 }
 @media only screen and (max-width:767px) and (min-width:481px) {
 	nav { float: none;
