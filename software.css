@@ -200,11 +200,15 @@ body{
 	
 	nav li { display: inline;} 
 	
-	.navImages{
+.navImages{
     border-radius: 1.0em; 
 	margin:1em 0em;
-	width: 20%;
+	width: 23%;
 	height: 3em;}
+	
+	.navImages2{width: 25%;
+			height: 2.5em;	
+			display: inline; }
 }
 @media only screen and (max-width:767px) and (min-width:481px) {
 	nav { float: none;
