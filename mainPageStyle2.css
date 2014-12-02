@@ -99,7 +99,7 @@ body{
 	width: 70%;
 	height: 2.5em; 
 }
-.navImages2{width: 22%;
+.navImages2{width: 25%;
 			height: 2.5em;	
 			display: inline; }
 .mainBackground{
@@ -192,11 +192,11 @@ body{
 	
 	nav {  float: none;
     background-color: darkblue;
-    height: 12em;
+    height: 10em;
     width: 100%;
     padding: 0;
     border-radius: 1.5em; 
-	margin-bottom: -5em;}
+	margin-bottom: -0.5em;}
 	
 	nav li { display: inline;} 
 	
