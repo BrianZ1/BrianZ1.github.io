@@ -210,7 +210,7 @@ body{
 			height: 2.5em;	
 			display: inline; }
 			
-	.mainBackground{ height: 90em; }
+	.mainBackground{ height: 70em; }
 }
 @media only screen and (max-width:767px) and (min-width:481px) {
 	nav { float: none;
